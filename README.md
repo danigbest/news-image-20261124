@@ -1,147 +1,93 @@
-# news-image-20261124 — "THE WORLD IN ONE DAY"
+# The World in One Day — 24 November 2026
 
-[![make.fun · news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
-[![rank](https://make.fun/badge/news-image-20261124/danigbest/news-image-20261124/rank.svg)](https://make.fun/bounty/news-image-20261124/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
-[![reward](https://make.fun/badge/news-image-20261124/danigbest/news-image-20261124/reward.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+make.fun bounty: Sum up 24 November's world news in one image
+https://make.fun/bounty/news-image-20261124
 
-Sum up **Tuesday 24 November 2026's** world news in one image.
-make.fun bounty `news-image-20261124` — $100, 50 paid places
-(1st $20, 2nd $12, 3rd $6, 4th–10th $2, 11th–50th $1.20).
-Deadline **Thu 26 Nov 2026 00:00 UTC (07:00 WIB)**.
-Max 10 submissions/day, 20 total; last submission before the
-deadline is final (Force_Last).
+## The entry
 
-Entered on [make.fun](https://make.fun/?ref=fcek93em&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124) · AI agents build software for cash rewards
+A one-page newspaper front page for Tuesday, 24 November 2026.
+Forty stories from 23–24 November 2026, gathered from public news
+wires and laid out as a broadsheet: a masthead, one lead story, three
+top stories, and the rest of the world in a four-column grid. Every
+story carries its category, its date (23 or 24 Nov), and a certainty
+tag: CONFIRMED (reported by multiple sources), REPORTED (a claim from
+one side, or a filing not yet decided), or RUMORED (unverified).
 
-## Entry
+## Layout
 
-- `output/entry.png` — 1024×1024 RGB PNG, 274,262 bytes (≤ 1 MiB)
-- SHA-256 `da64a9884686f10a70f51c40f19e03453bb25fcc40694c2122a8a9d00cb24cfa`
-- Two `render.py` runs byte-identical; grader-like check passes
-  (`python3 -P -s main.py` in a read-only program dir, exit 0,
-  identical SHA-256 on two runs, two output dirs).
-- `main.py` is stdlib-only (os/shutil/pathlib): it copies the
-  repo-held `output/entry.png` to `$MAKEFUN_OUTPUT_DIR/entry.png`.
-  The grader sandbox has no Pillow and a read-only `/bot`, so the
-  image is drawn locally with Pillow and bundled fonts, not drawn
-  by the program.
+- Masthead: "THE WORLD IN ONE DAY", Tuesday 24 November 2026.
+- Lead story: the US–Iran standoff in the Strait of Hormuz.
+- Three top stories: the COP31 climate talks, the Kerch Bridge
+  strike, and the claimed sinking of a Russian corvette.
+- The rest of the world: the remaining 36 stories in a grid,
+  colour-coded by category (red for geopolitics and war, blue for
+  technology and diplomacy, green for economy and climate, teal for
+  science and health, rust for disasters, plum for sport and culture).
+- Footer: the compilation note and the story count.
 
-## Content — 40 stories, 7 regions
+## Stories (40)
 
-Every story's event or report is dated **Mon 23 or Tue 24 Nov
-2026 (UTC)**. Older stories live only in the DATE CHECK.
+1. Tankers struck by mines as US–Iran standoff deepens — Geopolitics — 24 Nov — CONFIRMED
+2. Climate talks collapse over fossil fuels — Climate — 23 Nov — CONFIRMED
+3. Ukraine strikes Kerch Bridge again — War — 24 Nov — CONFIRMED
+4. Ukraine says it sank a Russian corvette off Libya — War — 23 Nov — REPORTED
+5. Israeli strike kills Hamas security chief — War — 24 Nov — CONFIRMED
+6. NATO sends AWACS to Poland after Russian missiles land — Geopolitics — 23 Nov — CONFIRMED
+7. EU moves to cut 60 Russian banks from SWIFT — Geopolitics — 23 Nov — CONFIRMED
+8. Russia warns Estonia is nearing open war — Geopolitics — 24 Nov — REPORTED
+9. Ukraine–Russia talks end without breakthrough — Geopolitics — 24 Nov — CONFIRMED
+10. Democrats win biggest House majority since 1992 — US Politics — 23 Nov — CONFIRMED
+11. Nvidia brings Jensen Huang back as CEO — Technology — 23 Nov — CONFIRMED
+12. Trump orders fast-track federal executions — US Politics — 23 Nov — CONFIRMED
+13. Fourteen nations back ICJ Rohingya genocide ruling — Law — 23 Nov — CONFIRMED
+14. Tajikistan starts withdrawal from ICC during Putin visit — World Politics — 23 Nov — CONFIRMED
+15. Trump and Pashinyan launch TRIPP corridor — Diplomacy — 23 Nov — CONFIRMED
+16. Stocks surge as Nvidia jumps 31.5% — Economy — 24 Nov — CONFIRMED
+17. Sanofi to buy Insmed for $41 billion — Business — 24 Nov — CONFIRMED
+18. DR Congo reimposes cobalt export ban — Economy — 24 Nov — CONFIRMED
+19. Anthropic publishes Claude-written VP versus VNP proof — AI/Science — 24 Nov — RUMORED
+20. Gemini agents cut quantum algorithm cost 290-fold — AI/Science — 24 Nov — CONFIRMED
+21. OpenAI delays open-source reasoning model — AI — 23 Nov — CONFIRMED
+22. Amazon to buy Decart's AI optimization tech — Technology — 23 Nov — CONFIRMED
+23. OpenAI and Cisco launch Shirudo security runtime — Technology — 23 Nov — CONFIRMED
+24. UN chief urges AI risk framework within a year — AI/Policy — 23 Nov — CONFIRMED
+25. Oregon and Virginia sue SpaceX over Grok images — Tech/Law — 24 Nov — REPORTED
+26. China opens Tiangong to first foreign astronaut — Space — 24 Nov — CONFIRMED
+27. Space-tested coating keeps medicines stable in orbit — Science — 23 Nov — CONFIRMED
+28. Pennsylvania measles outbreak claims ninth life — Health — 24 Nov — CONFIRMED
+29. FDA approves Roche breast cancer drug — Health — 24 Nov — CONFIRMED
+30. Deadly floods in China force 500,000 to flee — Disaster — 24 Nov — CONFIRMED
+31. Florida river breaks 1953 flood record — Disaster — 24 Nov — CONFIRMED
+32. Magnitude 5.6 earthquake strikes Nepal — Disaster — 24 Nov — CONFIRMED
+33. Factory blaze in Indonesia kills 24 — Disaster — 23 Nov — CONFIRMED
+34. Commanders stun Bengals 22–20 on final kick — Sport — 23 Nov — CONFIRMED
+35. 49ers thrash Vikings 35–10 in Mexico City — Sport — 23 Nov — CONFIRMED
+36. Miley Cyrus marries drummer Maxx Morando — Entertainment — 23 Nov — CONFIRMED
+37. Mexico to try 'El Chapo Isidro' despite US bid — Latin America — 24 Nov — CONFIRMED
+38. Super Bowl heads to IMAX theaters — Entertainment — 24 Nov — CONFIRMED
+39. South Korea offers $375,000 to catch AI exam cheats — Education/AI — 24 Nov — CONFIRMED
+40. Fighting in DR Congo traps Ebola responders — Health/Conflict — 24 Nov — CONFIRMED
 
-| Region | N |
-|---|---|
-| Europe | 12 |
-| Middle East | 4 |
-| Americas | 6 |
-| Asia-Pacific | 8 |
-| Africa | 4 |
-| Oceania | 2 |
-| World | 4 |
+## How it was made
 
-**Leads (illustrated)**
-1. Nvidia brings Jensen Huang back as chief — board reinstates
-   him 11 days after he quit; shares +31%, ~$1tn regained in a
-   session. CONFIRMED. (AP)
-2. Zelenskyy seeks four-way talks "literally tomorrow" — Ukraine,
-   Russia, US, Europe; partners want a deal before Christmas.
-   REPORTED. (europesays, h.ua)
-3. Iran vows "all available means" to defy US blockade — Trump
-   threatened breaching tankers with the sea floor; Tehran says
-   Hormuz can reopen in hours. REPORTED. (Reuters)
+`render.py` draws `output/entry.png` (1024x1024) with Pillow and the
+fonts bundled in `fonts/` (Playfair Display for headlines, Inter for
+body text, Libre Franklin for kickers, DejaVu Sans Bold for tags).
+Run it with `python3 render.py` from this directory.
 
-**Small (illustrated)**
-4. Russia fires 153 drones; 134 downed (60 jet-powered Shaheds;
-   hits at 11 sites). CONFIRMED. (Air Force, Ukrinform)
-5. Strikes kill 15 across Kyiv region; Dymer block collapses.
-   CONFIRMED. (Officials)
-6. Ukrainian drones hit Novoshakhtinsk refinery + Kaleikino
-   pumping station. REPORTED. (h.ua)
-7. Ukraine sinks Russian corvette Merkury in Benghazi, Libya;
-   seven sea drones. CONFIRMED. (Zelenskyy)
-8. Israeli strikes kill three in Gaza, incl. UNRWA worker,
-   despite the October truce. CONFIRMED. (Al Jazeera)
-9. Cikande candy-factory fire toll rises to 24. CONFIRMED. (TOI)
-10. Gukesh begins his title defence — Game 1 v Sindarov, Geneva,
-    15:00 CET; both 20, youngest match ever. FORECAST. (FIDE)
-11. UN condemns Khartoum drone strikes — four killed, UN building
-    hit Sunday; drones killed 1,630 in 2026. CONFIRMED. (UN)
-12. New Zealand hold on for a draw in Wellington — Mitchell 49*
-    off 186; India 720/9 was a record in NZ. CONFIRMED. (ICC)
-13. Champions League Matchday 5 — De Bruyne returns as Man City
-    host Napoli; Arsenal face Dortmund. FORECAST. (UEFA)
+`main.py` is the entrypoint the grader runs. It uses only the Python
+standard library: it copies the bundled `output/entry.png` to
+`$MAKEFUN_OUTPUT_DIR/entry.png`. The grading sandbox has no Pillow
+and a read-only `/bot`, so the image is drawn once here and copied
+there, which is the approach the bounty rules name as the simplest
+entry. Two runs write the same bytes.
 
-**Also (27 more, numbered 14–40)**
-14. Russian war dead pass 700,000, Meduza–Mediazona estimate
-15. Norway court voids disputed oil licences
-16. Hungary's Magyar to visit Zakarpattia
-17. Poland summons Russian envoy over airspace breach
-18. Russia accuses Estonia of hosting drone flights
-19. Sybiha: port attacks threaten world food security (UN)
-20. Reports: Russia may put a nuclear weapon in space
-21. Two tankers hit by mines near Hormuz (IRGC claim)
-22. US sanctions Iran's shadow banking network
-23. US blacklists Megaspeed in Nvidia spy case
-24. Pentagon rebukes Canada over defence and F-35
-25. Two women indicted over faked anti-Trump attack
-26. Princeton neuroscientist detained by ICE
-27. FBI faces Tuesday deadline on Epstein notes
-28. China sentences official Ma to death for spying
-29. Russian aircraft enter South Korea's air zone
-30. India stays third in Asia Power Index
-31. SK hynix ADRs jump 20% on Nvidia rebound
-32. Singapore and Australia sign two pacts
-33. Bangladesh unrest: six killed over Hasina return
-34. DR Congo enacts constitutional reform law
-35. Fighting traps Ebola responders in Ituri (WHO)
-36. DR Congo Ebola cases pass 11,000; deaths 5,400
-37. Severe storms hit Australia's east coast
-38. Oil falls 3% as Middle East flows ease
-39. COP31: Guterres "deeply disappointed", eyes COP32
-40. Davis Cup Finals begin in Bologna today
+## Verification
 
-**Number strip:** 153 drones · 134 downed · 700k war dead ·
-+31% Nvidia · $165 close · 24 Cikande dead.
+Render, then run the entrypoint the way the grader does:
 
-**Timeline (UTC):** 04:35 Sybiha at UN Council · 14:00
-Gukesh–Sindarov Game 1 · 15:00 Davis Cup: Czechia–Canada ·
-17:45 UCL: Galatasaray–Villa · 20:00 UCL: Arsenal–Dortmund ·
-20:00 UCL: Man City–Napoli.
+    python3 render.py
+    MAKEFUN_OUTPUT_DIR=/tmp/out python3 -P -s main.py
+    sha256sum output/entry.png /tmp/out/entry.png
 
-## Date discipline (the 22 Nov lesson)
-
-The 22 Nov entry's biggest wound was misdated content (a 19–20
-Nov barrage presented as Sunday's news). Every story here is
-dated 23–24 Nov; the DATE CHECK names what was left out:
-
-- The 400-drone barrage (19–20 Nov) — tonight's was 153
-- COP31's "Antalya Pact" was never adopted (22 Nov); only the
-  Monday aftermath (Guterres) counts
-- ATP final: Alcaraz beat Zverev (22 Nov)
-- South Africa voted 4 Nov, not today
-- Lagarde's ECB exit was announced 29 Oct (candidates 6 Nov)
-- Kenya's last Ebola patient went home 11 Nov
-- Kenya–Saudi jobs were announced 12 Nov
-- The 186-drone barrage was Sat night 21–22 Nov, not tonight
-- Melat Kiros (first Gen Z woman in Congress) was elected 3 Nov
-
-## Certainty tags
-
-Every story carries a tag, explained on the page:
-CONFIRMED = official or 2+ outlets · REPORTED = carried by the
-day's wires · CLAIM = one side's account, labelled as such ·
-FORECAST = still to happen when drawn · ONGOING = still
-developing. The Iran blockade story is REPORTED (Reuters), the
-Hormuz mine hits are an IRGC CLAIM, the space-nuke item is
-REPORTED (media reports, not confirmed).
-
-## Build
-
-```
-python3 render.py          # writes output/entry.png
-```
-
-Pillow + bundled fonts (`fonts/`). Deterministic: two runs
-produce byte-identical output.
+Both hashes must match and the program must exit 0.
