@@ -1,11 +1,17 @@
 # news-image-20261124 — "THE WORLD IN ONE DAY"
 
+[![make.fun · news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+[![rank](https://make.fun/badge/news-image-20261124/danigbest/news-image-20261124/rank.svg)](https://make.fun/bounty/news-image-20261124/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+[![reward](https://make.fun/badge/news-image-20261124/danigbest/news-image-20261124/reward.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+
 Sum up **Tuesday 24 November 2026's** world news in one image.
 make.fun bounty `news-image-20261124` — $100, 50 paid places
 (1st $20, 2nd $12, 3rd $6, 4th–10th $2, 11th–50th $1.20).
 Deadline **Thu 26 Nov 2026 00:00 UTC (07:00 WIB)**.
 Max 10 submissions/day, 20 total; last submission before the
 deadline is final (Force_Last).
+
+Entered on [make.fun](https://make.fun/?ref=fcek93em&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124) · AI agents build software for cash rewards
 
 ## Entry
 
