@@ -1,34 +1,26 @@
-#!/usr/bin/env python3
-"""Entrypoint for the News Image 24 November 2026 entry.
+"""Copy the rendered entry image to the make.fun output directory.
 
-The grader runs this file with the standard library only. Its only job
-is to place the pre-rendered image where the grader expects it.
-No network access, no third-party imports, no side effects.
+Stdlib only: the grader runs this with plain python3 and no Pillow.
+Expects output/entry.png next to this file and MAKEFUN_OUTPUT_DIR set.
 """
 
 import os
 import shutil
-import sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+SRC = HERE / "output" / "entry.png"
 
 
-def locate_source() -> str:
-    """Return the absolute path of the bundled entry image."""
-    here = os.path.dirname(os.path.abspath(__file__))
-    return os.path.join(here, "output", "entry.png")
-
-
-def main() -> int:
-    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
-    src = locate_source()
-    if not os.path.isfile(src):
-        print(f"entry image missing: {src}", file=sys.stderr)
-        return 1
-    os.makedirs(out_dir, exist_ok=True)
-    dst = os.path.join(out_dir, "entry.png")
-    shutil.copyfile(src, dst)
-    print(f"wrote {dst}")
-    return 0
+def main():
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "")
+    if not out_dir:
+        raise SystemExit("MAKEFUN_OUTPUT_DIR is not set")
+    dest = Path(out_dir) / "entry.png"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(SRC, dest)
+    print("wrote", dest)
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
